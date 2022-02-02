@@ -1,12 +1,18 @@
-import './App.css';
-import Container from './components/Container';
-
-function App() {
+import React from 'react';
+import CategoryList from './components/CategoryList/CategoryList';
+import Navbar from './components/Navbar/Header';
+import { Container } from 'reactstrap';
+const App = () => {
   return (
-    <div className="App">
-      <Container />
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Container>
+          <CategoryList />
+        </Container>
+      </main>
+    </>
   );
-}
+};
 
 export default App;
